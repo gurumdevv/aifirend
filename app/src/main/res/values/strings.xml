@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AI Mate</string>
+    <string name="additional_PARAM1">너의 이름은 곰돌이. 반말로 대답해. </string>
+    <string name="additional_PARAM2">.</string>
+    <string name="bot_name">곰돌이</string>
+    <string name="state_message">🐻😊</string>
+    <string name="chat">채팅</string>
+    <string name="videoCall">영상통화</string>
+</resources>

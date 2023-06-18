@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:padding="5dp"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:id="@+id/setting_inner_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5E413E"
+            android:textSize="24dp"
+            android:text="환경 설정"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp">
+
+            <!--        //<TextView-->
+            <!--            android:id="@+id/textView"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="글씨 크기"  android:textColor="#000000"-->
+            <!--            android:textSize="18dp"-->
+            <!--            android:textStyle="bold"/>-->
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/smalltext"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:text="작게" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/midiumtext"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:text="중간" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/bigtext"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:text="크게" />-->
+            <!--        </LinearLayout>//-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영상통화"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/camera_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/dongdong"
+                android:text="카메라 기능 설정"
+                android:thumbTint="@color/darkbrown"
+                android:trackTint="@color/lightbrown" />
+
+            <Switch
+                android:id="@+id/mute_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/dongdong"
+                android:text="아바타 음소거"
+                android:thumbTint="@color/darkbrown"
+                android:trackTint="@color/lightbrown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아바타 음량 조절"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/dongdong"/>
+
+                <SeekBar
+                    android:id="@+id/volume_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="100"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아바타 음성 속도"
+                    android:textColor="#000000"/>
+                <SeekBar
+                    android:id="@+id/speed_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="20"
+                    android:min="5"
+                    android:progress="10"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/save_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/dongdong"
+                android:text="대화내용 저장 (채팅 대화에 기록)"
+                android:thumbTint="#BAA38C"
+                android:trackTint="#CBBBAC" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="채팅"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/clear_history_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EDEDD5"
+                    android:text="대화 기록 삭제"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
